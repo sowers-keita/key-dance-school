@@ -31,6 +31,14 @@
   .reason-banners{display:flex;flex-direction:column;gap:48px;margin-top:40px;}
   .banner-title{font-size:clamp(20px,4.8vw,30px);font-weight:900;text-align:center;line-height:1.45;
     margin-bottom:16px;color:var(--ink);}
+  /* 期間限定の開講案内 */
+  .announce{background:linear-gradient(135deg,var(--yellow-soft),var(--pink-soft));border-top:2px dashed var(--pink);border-bottom:2px dashed var(--pink);}
+  .announce-inner{padding:44px 0;text-align:center;}
+  .announce-badge{display:inline-flex;align-items:center;gap:8px;background:var(--pink);color:#fff;font-weight:900;padding:8px 18px;border-radius:999px;font-size:14px;box-shadow:var(--shadow);}
+  .announce h2{font-size:clamp(22px,5vw,32px);font-weight:900;margin:16px auto 10px;line-height:1.45;}
+  .announce h2 .hl{background:linear-gradient(transparent 58%,#fff 58%);padding:0 4px;}
+  .announce p{max-width:680px;margin:0 auto;color:var(--ink);font-weight:600;font-size:15px;}
+  .announce .btn{margin-top:22px;}
 
   header{position:sticky;top:0;z-index:50;background:rgba(255,250,245,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
   .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
@@ -231,6 +239,18 @@
   </div>
 </section>
 
+<!-- ▼▼ 期間限定：開講のお知らせ（不要になったら、この section ブロックごと削除してください）▼▼ -->
+<section class="announce" id="announce">
+  <div class="wrap announce-inner">
+    <span class="announce-badge">🎉 2026年7月 新規開講</span>
+    <h2>今なら、みんな<span class="hl">“はじめて”</span>からのスタート。</h2>
+    <p>key dance school は、2026年7月にオープンする、できたばかりのダンス教室です。だから今は、通う子もみんな初心者。「周りはもう上手なのかな…」という心配がなく、お子さんも同じスタートラインから、安心して始められます。</p>
+    <!-- TODO: 公式LINEのURLに差し替え -->
+    <a href="https://lin.ee/XXXXXXX" class="btn btn-line">📱 開講メンバーとして無料体験を申し込む</a>
+  </div>
+</section>
+<!-- ▲▲ 開講のお知らせ ここまで ▲▲ -->
+
 <!-- REASONS -->
 <section class="reasons sectpad">
   <div class="wrap">
@@ -325,9 +345,11 @@
     <div class="insteaser-card reveal">
       <div class="insteaser-photo">🧑‍🏫</div>
       <div class="t">
-        <span class="role-chip">ダンス講師</span>
-        <h3>講師名をここに</h3>
-        <p>「上手・下手より、まず楽しむこと」を大切に、一人ひとりのペースに合わせて指導します。みんなが安心して通える、あたたかい教室を目指しています。</p>
+        <span class="role-chip">key dance school 講師</span>
+        <h3>あかね 先生</h3>
+        <p>こんにちは！ key dance school で先生を務める「あかね」です。幼少期からダンスを始め、体を動かす楽しさや、「できなかったことができるようになる」喜びをたくさん経験してきました。</p>
+        <p>運動は、上手・下手だけではなく「楽しい！」と思えることが何より大切。一人ひとりのペースを大切にしながら、成功体験を積み重ね、自信につなげられるようサポートします。音楽に合わせて体を動かすことを通して、運動能力だけでなく、挑戦する気持ちや諦めない心も育んでいけるよう頑張ります。</p>
+        <p>子どもたちが「また来たい！」「体を動かすのって楽しい！」と思える時間を、一緒につくっていきます。よろしくお願いします！😊</p>
         <div class="mini-tags">
           <span>🎶 キッズダンス</span>
           <span>🕺 はじめてのリズム</span>
@@ -335,7 +357,6 @@
         </div>
       </div>
     </div>
-    <p class="edit-hint">※ 講師名・お写真・メッセージは、あとから自由に差し替えられます。</p>
   </div>
 </section>
 
