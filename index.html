@@ -160,7 +160,8 @@
   .insteaser{background:#fff;}
   .insteaser-card{display:flex;gap:26px;align-items:center;background:var(--cream);border-radius:28px;padding:30px;box-shadow:var(--shadow);margin-top:30px;flex-wrap:wrap;}
   @media(max-width:560px){.insteaser-card{justify-content:center;text-align:center;}}
-  .insteaser-photo{flex:0 0 auto;width:120px;height:120px;border-radius:50%;background:linear-gradient(150deg,var(--pink),var(--lav));display:grid;place-items:center;font-size:54px;color:#fff;}
+  .insteaser-photo{flex:0 0 auto;width:140px;height:140px;border-radius:50%;background:linear-gradient(150deg,var(--pink),var(--lav));display:grid;place-items:center;font-size:54px;color:#fff;overflow:hidden;}
+  .insteaser-photo img{width:100%;height:100%;object-fit:cover;object-position:57% 34%;}
   .insteaser-card .t{flex:1 1 240px;}
   .insteaser-card h3{font-size:20px;font-weight:900;}
   .insteaser-card p{color:var(--ink2);font-weight:600;margin-top:8px;font-size:14px;}
@@ -343,7 +344,7 @@
     <h2 class="title">講師紹介</h2>
     <p class="lead">どの子も安心して踊れるように、やさしく楽しく教えます。</p>
     <div class="insteaser-card reveal">
-      <div class="insteaser-photo">🧑‍🏫</div>
+      <div class="insteaser-photo"><img src="akane.jpg" alt="講師 あかね先生"></div>
       <div class="t">
         <span class="role-chip">key dance school 講師</span>
         <h3>あかね 先生</h3>
