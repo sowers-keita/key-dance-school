@@ -41,6 +41,11 @@
   .announce h2 .hl{background:linear-gradient(transparent 58%,#fff 58%);padding:0 4px;}
   .announce p{max-width:680px;margin:0 auto;color:var(--ink);font-weight:600;font-size:15px;}
   .announce .btn{margin-top:22px;}
+  .campaign{display:inline-flex;flex-direction:column;align-items:center;gap:8px;background:#fff;border:2px solid var(--pink);border-radius:20px;padding:16px 26px;margin:20px auto 0;box-shadow:var(--shadow);}
+  .campaign-tag{display:inline-block;background:var(--pink);color:#fff;font-weight:900;font-size:12px;padding:5px 14px;border-radius:999px;letter-spacing:.03em;}
+  .campaign p{margin:0;font-weight:900;font-size:clamp(15px,4vw,20px);color:var(--ink);line-height:1.5;}
+  .campaign p b{color:var(--pink);}
+  .campaign small{color:var(--ink2);font-weight:700;font-size:12px;}
 
   header{position:sticky;top:0;z-index:50;background:rgba(255,250,245,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
   .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
@@ -248,6 +253,11 @@
     <span class="announce-badge">🎉 2026年7月 新規開講</span>
     <h2>今なら、みんな<span class="hl">同じスタートライン</span>。</h2>
     <p>key dance school は、2026年7月にオープンする、できたばかりのダンス教室です。だから今は、通う子もみんな初心者。「周りはもう上手なのかな…」という心配がなく、お子さんも同じスタートラインから、安心して始められます。</p>
+    <div class="campaign">
+      <span class="campaign-tag">🎁 期間限定キャンペーン</span>
+      <p>6月中のご入会で <b>入会金（5,000円）が無料！</b></p>
+      <small>※ 6月中にご入会の方が対象です。</small>
+    </div>
     <!-- TODO: 公式LINEのURLに差し替え -->
     <a href="https://lin.ee/XXXXXXX" class="btn btn-line">📱 開講メンバーとして無料体験を申し込む</a>
   </div>
