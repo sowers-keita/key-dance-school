@@ -11,6 +11,7 @@
   :root{
     --pink:#ff9ec4; --pink-soft:#ffe0ee; --lav:#b9a3ff; --lav-soft:#ece6ff;
     --mint:#7fe0c0; --mint-soft:#d8f7ec; --yellow:#ffe08a; --yellow-soft:#fff5d6;
+    --aqua:#6fc4ef; --aqua-2:#a7ddf7; --green:#5fd07f; --green-2:#a6e7b3;
     --cream:#fffaf5; --card:#ffffff; --ink:#56506b; --ink2:#857e9c; --line:#f0e8f5;
     --shadow:0 10px 30px rgba(150,120,180,.14); --r:24px;
   }
@@ -129,6 +130,8 @@
   .schedule{background:var(--mint-soft);}
   .sched-card{background:#fff;border-radius:28px;box-shadow:var(--shadow);overflow:hidden;margin-top:34px;}
   .sched-head{background:linear-gradient(135deg,var(--lav),var(--pink));color:#fff;padding:22px 26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .sched-head.wed{background:linear-gradient(135deg,var(--aqua),var(--aqua-2));}
+  .sched-head.thu{background:linear-gradient(135deg,var(--green),var(--green-2));}
   .sched-head .day{font-size:26px;font-weight:900;}
   .sched-head .meta{font-weight:800;font-size:14px;opacity:.95;}
   .classes{display:grid;grid-template-columns:1fr 1fr;}
@@ -168,8 +171,8 @@
   .venue-head{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:14px;}
   .venue-head h3{font-size:clamp(18px,3.6vw,22px);font-weight:900;}
   .venue-day{display:inline-block;color:#fff;font-weight:900;font-size:14px;padding:6px 14px;border-radius:999px;}
-  .venue-day.wed{background:linear-gradient(135deg,var(--lav),var(--pink));}
-  .venue-day.thu{background:linear-gradient(135deg,var(--mint),var(--lav));}
+  .venue-day.wed{background:linear-gradient(135deg,var(--aqua),var(--aqua-2));}
+  .venue-day.thu{background:linear-gradient(135deg,var(--green),var(--green-2));}
   .map-wrap{border-radius:28px;overflow:hidden;box-shadow:var(--shadow);background:#fff;}
   .map-wrap iframe{width:100%;height:360px;border:0;display:block;}
   .addr{display:flex;flex-wrap:wrap;gap:8px 20px;justify-content:center;margin-top:20px;font-weight:800;}
@@ -324,7 +327,7 @@
     <h2 class="title">クラス・練習日時</h2>
     <p class="lead">水曜日・木曜日、月3回レッスン。<b>曜日によって会場が変わります</b>（クラスと時間はどちらも同じです）。学校帰りに通いやすい時間です。</p>
     <div class="sched-card reveal">
-      <div class="sched-head">
+      <div class="sched-head wed">
         <span class="day">🗓️ 水曜日</span>
         <span class="meta">月3回レッスン｜会場：<b>上八万</b>コミュニティセンター</span>
       </div>
@@ -334,7 +337,7 @@
       </div>
     </div>
     <div class="sched-card reveal">
-      <div class="sched-head">
+      <div class="sched-head thu">
         <span class="day">🗓️ 木曜日</span>
         <span class="meta">月3回レッスン｜会場：<b>八万中央</b>コミュニティセンター</span>
       </div>
