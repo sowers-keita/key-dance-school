@@ -195,6 +195,19 @@
   .mini-tags span{background:#fff;border-radius:999px;padding:6px 13px;font-weight:800;font-size:12.5px;box-shadow:0 2px 6px rgba(150,120,180,.1);}
   .edit-hint{text-align:center;color:var(--ink2);font-weight:600;font-size:12.5px;margin-top:18px;}
 
+  /* FAQ（よくある質問・アコーディオン） */
+  .faq{background:linear-gradient(180deg,var(--lav-soft),#fff);}
+  .faq-list{max-width:760px;margin:36px auto 0;display:flex;flex-direction:column;gap:14px;}
+  .faq-item{background:#fff;border-radius:18px;box-shadow:var(--shadow);border:2px solid #fff;overflow:hidden;}
+  .faq-item summary{list-style:none;cursor:pointer;padding:20px 58px 20px 22px;font-weight:900;font-size:15.5px;color:var(--ink);position:relative;line-height:1.55;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);width:30px;height:30px;border-radius:50%;background:var(--lav-soft);color:var(--lav);display:grid;place-items:center;font-size:22px;font-weight:900;transition:transform .25s, background .2s, color .2s;}
+  .faq-item[open] summary::after{content:"–";background:var(--pink-soft);color:var(--pink);}
+  .faq-item summary:hover{color:var(--pink);}
+  .faq-a{padding:2px 22px 22px;color:var(--ink2);font-weight:600;font-size:14.5px;line-height:1.9;}
+  .faq-a b{color:var(--ink);}
+  .faq-foot{text-align:center;margin-top:26px;color:var(--ink2);font-weight:700;font-size:14px;}
+
   .cta{background:linear-gradient(135deg,var(--pink),var(--lav));color:#fff;text-align:center;}
   .cta h2{font-size:clamp(24px,5.5vw,38px);font-weight:900;line-height:1.4;}
   .cta p{margin-top:14px;font-weight:700;opacity:.96;}
@@ -228,6 +241,7 @@
       <a href="#schedule">クラス・日時</a>
       <a href="#access">アクセス</a>
       <a href="#instructor">講師紹介</a>
+      <a href="#faq">よくある質問</a>
       <!-- TODO: 公式LINEのURLに差し替え -->
       <a href="https://lin.ee/nZqh4EU" class="nav-cta">📱 無料体験</a>
     </nav>
@@ -417,6 +431,74 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq sectpad" id="faq">
+  <div class="wrap">
+    <span class="eyebrow">FAQ</span>
+    <h2 class="title">よくある質問</h2>
+    <p class="lead">気になる項目をタップすると、答えがひらきます。</p>
+    <div class="faq-list reveal">
+
+      <details class="faq-item">
+        <summary>Q. ダンスが初めてでも大丈夫ですか？</summary>
+        <div class="faq-a"><b>はい、大丈夫です。</b> key ダンス教室では、ダンスが初めてのお子さまでも楽しく参加できるように、基礎からゆっくり進めていきます。「音楽に合わせて体を動かすのが楽しい！」と思ってもらえることを大切にしています。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 何歳から参加できますか？</summary>
+        <div class="faq-a"><b>小学生のお子さまを対象としたクラスです。</b> 未就学児のお子さまでも、ダンスに興味がある場合は参加できる場合がありますので、まずはお気軽にLINEにてご相談ください。お子さまの年齢や様子に合わせてご案内させていただきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 男の子でも参加できますか？</summary>
+        <div class="faq-a"><b>はい、男の子も女の子も参加できます。</b> key ダンス教室では、性別に関係なく「音楽に合わせて体を動かす楽しさ」を大切にしています。ダンスが初めてのお子さまも大歓迎ですので、安心してご参加ください。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 人見知りの子でも参加できますか？</summary>
+        <div class="faq-a"><b>はい、もちろんです。</b> 最初は緊張するお子さまも多いですが、先生やお友だちと一緒に少しずつ慣れていける雰囲気づくりを大切にしています。無理に前に出したりせず、その子のペースを見ながらサポートします。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 体験レッスンはできますか？</summary>
+        <div class="faq-a"><b>はい、体験レッスンを受け付けています。</b> 初めての場所や雰囲気に緊張して、最初は見学だけになってしまうお子さまもいらっしゃいます。その場合は、無理に参加しなくても大丈夫です。また翌週に改めて体験として参加していただくこともできますので、お子さまのペースに合わせてお越しくださいね。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 体験の時は何を持っていけばいいですか？</summary>
+        <div class="faq-a"><b>動きやすい服装、室内シューズ、飲み物、タオルをお持ちください。</b> 初めての場合は、普段着に近い動きやすい服装でも大丈夫です。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 保護者はレッスンを見学できますか？</summary>
+        <div class="faq-a"><b>はい、見学できます。</b> お子さまの様子を見ながら、安心して体験していただけます。ただし、会場の状況によっては見学スペースに限りがある場合があります。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 発表会やイベントはありますか？</summary>
+        <div class="faq-a"><b>基本的に、大きな発表会やイベントの予定はありません。</b> ただし、保護者の方に向けた小さな発表の機会や、地域の小さなイベントへの参加などは、皆さまとご相談の上で検討していきたいと考えています。無理に参加をお願いするものではなく、お子さまが楽しみながら挑戦できる機会を大切にしていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. ダンスのジャンルは何ですか？</summary>
+        <div class="faq-a"><b>キッズ向けのダンスが中心です。</b> 音楽に合わせて楽しく体を動かすレッスンを行います。基礎のリズムトレーニングや簡単な振り付けを通して、表現力や運動能力を育てていきます。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 運動が苦手でも大丈夫ですか？</summary>
+        <div class="faq-a"><b>大丈夫です。</b> ダンスは「上手に踊ること」だけが目的ではありません。リズム感、体力、表現力、自信を少しずつ育てていくことを大切にしています。</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>Q. 休んだ場合の振替はありますか？</summary>
+        <div class="faq-a"><b>はい、振替可能です。</b> お休みされた場合は、他のクラスへ参加していただくこともできます。ご都合に合わせて、無理なく通っていただけるように対応しています。</div>
+      </details>
+
+    </div>
+    <p class="faq-foot">ほかにも気になることがあれば、お気軽にLINEでご相談ください 😊</p>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta sectpad">
   <div class="wrap">
@@ -440,6 +522,7 @@
       <a href="https://lin.ee/nZqh4EU">📱 LINEで無料体験</a>
       <a href="#access">📍 上八万コミュニティセンター</a>
       <a href="#instructor">🧑‍🏫 講師紹介</a>
+      <a href="#faq">❓ よくある質問</a>
       <a href="https://sowers-club-hp.vercel.app/" target="_blank" rel="noopener">🌱 sowers sports club</a>
     </div>
   </div>
