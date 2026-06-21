@@ -146,6 +146,11 @@
   .sched-note{margin-top:16px;text-align:center;font-weight:800;color:var(--ink2);font-size:15px;}
   .sched-note b{color:var(--lav);}
   .sched-note.small{margin-top:8px;font-size:13px;font-weight:700;color:var(--ink2);opacity:.85;max-width:680px;margin-left:auto;margin-right:auto;}
+  .fee-badge{margin:18px auto 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 16px;width:fit-content;max-width:88%;background:#fff;border:2px solid var(--lav);border-radius:22px;padding:14px 26px;box-shadow:var(--shadow);font-weight:900;font-size:1.05rem;color:var(--ink);line-height:1.5;}
+  .fee-badge .fee-item{white-space:nowrap;}
+  .fee-badge b{color:var(--lav);font-weight:900;}
+  .fee-badge .fee-sep{color:var(--line);}
+  @media(max-width:480px){.fee-badge{flex-direction:column;gap:6px;border-radius:18px;width:auto;max-width:280px;}.fee-badge .fee-sep{display:none;}}
   .chip{background:var(--cream);border-radius:999px;padding:7px 14px;font-weight:800;font-size:13px;box-shadow:0 2px 6px rgba(150,120,180,.1);}
 
   .parent{background:linear-gradient(135deg,var(--mint-soft),var(--yellow-soft));}
@@ -362,7 +367,11 @@
         <div class="cls b"><span class="name">B クラス</span><div class="time">17:30 – 18:30</div></div>
       </div>
     </div>
-    <div class="reveal" style="margin-top:18px;text-align:center"><span style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:2px solid var(--lav);border-radius:999px;padding:13px 28px;font-weight:900;font-size:1.05rem;box-shadow:var(--shadow);color:var(--ink)">💴 月謝 <span style="color:var(--lav)">4,900円</span>　／　年会費 <span style="color:var(--lav)">無料</span></span></div>
+    <div class="fee-badge reveal">
+      <span class="fee-item">💴 月謝 <b>4,900円</b></span>
+      <span class="fee-sep">／</span>
+      <span class="fee-item">年会費 <b>無料</b></span>
+    </div>
     <div class="sched-foot reveal">
       <span class="chip">👕 動きやすい服装</span>
       <span class="chip">👟 室内シューズ</span>
