@@ -48,6 +48,17 @@
   .campaign p b{color:var(--pink);}
   .campaign small{color:var(--ink2);font-weight:700;font-size:12px;}
 
+  /* 無料体験会（チラシ掲載） */
+  .trial{background:linear-gradient(180deg,var(--lav-soft),var(--cream));}
+  .trial-inner{text-align:center;}
+  .trial .eyebrow{color:var(--lav);}
+  .trial h2{font-size:clamp(22px,5vw,32px);font-weight:900;line-height:1.4;margin-bottom:8px;}
+  .trial h2 .hl{background:linear-gradient(transparent 56%,var(--yellow) 56%);padding:0 4px;}
+  .trial .trial-lead{color:var(--ink2);font-weight:600;max-width:620px;margin:0 auto 24px;font-size:14px;}
+  .trial-flyer{max-width:520px;width:100%;margin:0 auto;border-radius:22px;box-shadow:var(--shadow);display:block;}
+  .trial .btn{margin-top:26px;}
+  .trial small{display:block;margin-top:12px;color:var(--ink2);font-weight:700;font-size:12.5px;max-width:620px;margin-left:auto;margin-right:auto;}
+
   header{position:sticky;top:0;z-index:50;background:rgba(255,250,245,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
   .nav{display:flex;align-items:center;justify-content:space-between;height:64px;}
   .logo{display:flex;align-items:center;gap:9px;font-weight:900;font-size:19px;}
@@ -247,6 +258,7 @@
     <a href="#top" class="logo"><span class="mark">🔑</span><span>key dance school<small>5歳からのダンス教室</small></span></a>
     <button class="menu-btn" id="menuBtn" aria-label="メニュー">☰</button>
     <nav class="navlinks" id="navlinks">
+      <a href="#trial">体験会</a>
       <a href="#about">教室について</a>
       <a href="#schedule">クラス・日時</a>
       <a href="#access">アクセス</a>
@@ -284,6 +296,19 @@
       <div class="float f1">🎵</div><div class="float f2">✨</div>
       <div class="float f3">💕</div><div class="float f4">🎶</div>
     </div>
+  </div>
+</section>
+
+<!-- 無料体験会（チラシ掲載）※終了したら、この section ブロックごと削除してください -->
+<section class="trial sectpad" id="trial">
+  <div class="wrap trial-inner">
+    <span class="eyebrow">TRIAL</span>
+    <h2>🎈 <span class="hl">無料体験会</span> 開催中！</h2>
+    <p class="trial-lead">7月にジュニアクラス（小学3〜6年生）の無料体験会を開催します。日程・会場は下記のとおりです。気になる回に、手ぶらでお気軽にどうぞ。</p>
+    <img class="trial-flyer" src="taiken-flyer.jpg" alt="key dance school ジュニアクラス 無料体験会のご案内。水曜クラス＝上八万コミュニティセンター（徳島市上八万町樋口61・1階）7/15（水）・7/22（水）17:30〜18:30。木曜クラス＝八万中央コミュニティセンター（徳島市八万町内浜80-14・2階）7/16（木）・7/23（木）18:30〜19:30。体験費無料、月謝4,900円（月3回）、対象は小学3〜6年生。7月中の体験で入会金5,000円が無料。" loading="lazy">
+    <!-- TODO: 公式LINEのURLに差し替え -->
+    <a href="https://lin.ee/nZqh4EU" class="btn btn-line">📱 LINEで無料体験を申し込む</a>
+    <small>※ 中学生以上の参加はご相談ください。発表会・大会への参加予定はなく、無理なく続けられます。</small>
   </div>
 </section>
 
